@@ -29,3 +29,10 @@ df = pd.read_csv( file_path, header=None)
 df.head()
 ```
 
+```
+import pandas as pd
+df = pd.DataFrame(breast_cancer.data, 
+                  columns = breast_cancer.feature_names)
+df['diagnosis'] = breast_cancer.target
+df
+```
