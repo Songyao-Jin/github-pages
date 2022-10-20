@@ -36,3 +36,13 @@ df = pd.DataFrame(breast_cancer.data,
 df['diagnosis'] = breast_cancer.target
 df
 ```
+
+```
+from sklearn.model_selection import train_test_split
+X = df.iloc[:,:-1]      
+y = df.iloc[:,-1]
+#---perform a split---
+random_state = 12
+X_train, X_test, y_train, y_test = train_test_split(X, y,test_size = 0.3,
+                     shuffle = True,random_state=random_state)
+```
