@@ -1,5 +1,5 @@
 ---
-title: "The page for pandas knowledge"
+title: "Python-Pandas"
 date: 2022-10-20
 ---
 
