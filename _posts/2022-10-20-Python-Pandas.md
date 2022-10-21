@@ -30,6 +30,16 @@ df.head()
 ```
 
 ```
+# each column represents a feature of data. last column contains class labels (2: benign , 4: malignant)
+col_names = ['Id', 'Clump_thickness', 'Uniformity_Cell_Size', 'Uniformity_Cell_Shape', 'Marginal_Adhesion', 
+             'Single_Epithelial_Cell_Size', 'Bare_Nuclei', 'Bland_Chromatin', 'Normal_Nucleoli', 'Mitoses', 'Class']
+
+df.columns = col_names
+
+df
+```
+
+```
 import pandas as pd
 df = pd.DataFrame(breast_cancer.data, 
                   columns = breast_cancer.feature_names)
